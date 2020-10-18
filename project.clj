@@ -44,7 +44,8 @@
                ;; lein cljsbuild once min
                {:id "min"
                 :source-paths ["src"]
-                :compiler {:output-to "resources/public/js/compiled/math_practice.js"
+                :compiler {:asset-path "js/compiled/out"
+                           :output-to "resources/public/js/compiled/math_practice.js"
                            :main math-practice.core
                            :optimizations :advanced
                            :pretty-print false}}]}
